@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+
+    android:fillViewport="true"
+    tools:context=".Settingspopup">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dp"
+                android:background="#00000000"
+                android:onClick="back"
+                android:src="@drawable/ic_baseline_arrow_back_ios_244" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="33dp"
+                android:text="All you need to know"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="There are three ways to manipulate the cube: "
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="First way: You can choose a color from the color palette below just tap the color you want.."
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="380dp"
+            android:layout_height="166dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            app:srcCompat="@drawable/tapone" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Then tap on the square on the cube that you want it's color changed."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="380dp"
+            android:layout_height="340dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/taptwo" />
+
+        <TextView
+            android:id="@+id/textView58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Second way: you can use the notations scroll bar to manipulate how the pieces move "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="380dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/leftmove" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Third way: you can use the scramble button below as shown in the picture to produce random moves "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="380dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/scrambleblur" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Now that you have your cube scrambled the way you want, let's get into solving it! "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="380dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            app:srcCompat="@drawable/nextclick" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="380dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/solveclick" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Now that you learnt how to scramble the cube , you can reset it to its original state by taping the Reset button."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="380dp"
+            android:layout_height="480dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/resetimg" />
+
+
+    </LinearLayout>
+</ScrollView>

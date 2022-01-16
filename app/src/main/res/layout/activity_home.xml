@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76797C"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="632dp"
+        android:layout_height="1095dp"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/homebg7" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="865dp"
+        android:layout_height="1119dp"
+        android:alpha="1"
+        android:rotation="45"
+
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358"
+        app:srcCompat="@drawable/settings5" />
+
+    <Button
+        android:id="@+id/outlinedButton2"
+
+        style="@style/icon5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@drawable/mainbuttons"
+        android:fontFamily="@font/sunnyspells"
+        android:gravity="center_horizontal"
+        android:onClick="timer"
+        android:text="Timer"
+        android:textColor="#1F2123"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:backgroundTint="#CACACA"
+        app:icon="@drawable/ic_baseline_timer_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <Button
+        android:id="@+id/outlinedButton3"
+        style="@style/icon3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="50dp"
+        android:background="@drawable/mainbuttons"
+
+        android:fontFamily="@font/sunnyspells"
+        android:gravity="center_horizontal"
+        android:onClick="login"
+        android:text="Login"
+        android:textColor="#1F2123"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:backgroundTint="#CACACA"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <Button
+        android:id="@+id/outlinedButton"
+        style="@style/icon1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/mainbuttons"
+        android:fontFamily="@font/sunnyspells"
+        android:onClick="solve"
+        android:text="Solve"
+        android:textColor="#1F2123"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:backgroundTint="#CACACA"
+        app:icon="@drawable/ic_baseline_play_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <Button
+        android:id="@+id/outlinedButton4"
+
+        style="@style/icon2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@drawable/mainbuttons"
+        android:fontFamily="@font/sunnyspells"
+        android:gravity="center_horizontal"
+        android:onClick="insta"
+        android:text="GUIDE"
+        android:textColor="#1F2123"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:backgroundTint="#CACACA"
+        app:icon="@drawable/ic_baseline_sticky_note_2_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
+
+    <Button
+        android:id="@+id/outlinedButton1"
+        style="@style/icon4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+
+        android:background="@drawable/mainbuttons"
+        android:fontFamily="@font/sunnyspells"
+        android:gravity="center_horizontal"
+        android:onClick="probtn"
+        android:text="Profile"
+        android:textColor="#1F2123"
+        android:textSize="50sp"
+        android:textStyle="normal"
+        app:backgroundTint="#CACACA"
+        app:icon="@drawable/ic_baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

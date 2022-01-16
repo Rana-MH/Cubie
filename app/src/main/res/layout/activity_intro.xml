@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        tools:context=".Intro">
+
+
+    <FrameLayout
+        android:id="@+id/fragcon"
+        android:layout_width="match_parent"
+        android:layout_height="727dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="4dp">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFFFF"
+        app:itemIconSize="30dp"
+        app:itemIconTint="#FF000000"
+        app:itemTextAppearanceInactive="@style/bottom_navigation_menu"
+        app:itemTextColor="#FF000000"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/top_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="754dp"
+        android:background="#FFFFFFFF"
+        app:itemBackground="@drawable/top_nav_tab_background"
+        app:itemTextAppearanceActive="@style/TextAppearance.BottomNavigationView.Active"
+        app:itemTextAppearanceInactive="@style/TextAppearance.BottomNavigationView.Inactive"
+        app:itemTextColor="#FF000000"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:menu="@menu/top_navigation_menu" />
+
+</RelativeLayout>
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:animateLayoutChanges="true"-->
+<!--        android:orientation="vertical"-->
+<!--        android:fillViewport="true">-->
+<!--        -->
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/top_navigation"-->
+<!--            style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:background="#FFFFFFFF"-->
+<!--            app:itemBackground="@drawable/top_nav_tab_background"-->
+<!--            app:itemTextAppearanceActive="@style/TextAppearance.BottomNavigationView.Active"-->
+<!--            app:itemTextAppearanceInactive="@style/TextAppearance.BottomNavigationView.Inactive"-->
+<!--            app:itemTextColor="#FF000000"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0"-->
+<!--            app:menu="@menu/top_navigation_menu" />-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottom_navigation"-->
+<!--            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="#FFFFFFFF"-->
+<!--            app:itemIconSize="30dp"-->
+<!--            app:itemIconTint="#FF000000"-->
+<!--            app:itemTextAppearanceInactive="@style/bottom_navigation_menu"-->
+<!--            app:itemTextColor="#FF000000"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="1.0"-->
+<!--            app:menu="@menu/bottom_navigation_menu" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="92dp"-->
+<!--            android:alpha="0.92"-->
+<!--            android:text="Introduction"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--            android:textColor="#FF000000"-->
+<!--            android:textSize="50sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/imageView2"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.497"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView11"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="-First you must understand the notations of the Rubik's Cube"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#2C2C27"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/textView16"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.547"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.946" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView11"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="153dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/textView13"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.844"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="1.0"-->
+<!--            app:srcCompat="@drawable/back1" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView7"-->
+<!--            android:layout_width="146dp"-->
+<!--            android:layout_height="161dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/textView13"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.143"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView19"-->
+<!--            app:layout_constraintVertical_bias="1.0"-->
+<!--            app:srcCompat="@drawable/front1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView12"-->
+<!--            android:layout_width="182dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="12dp"-->
+<!--            android:text="The Front face when you see an UPPERCASE 'F' you should move the front layer in a clockwise rotation or if you-->
+<!--    see UPPERCASE 'F'' move it anti-clockwise rotation."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/imageView12"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.107"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView7"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView13"-->
+<!--            android:layout_width="174dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:text="The Back face when you see an UPPERCASE 'B' you should move the back layer in a clockwise rotation or if you-->
+<!--    see UPPERCASE 'B'' move it anti-clockwise rotation."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#0B0A0A"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/imageView13"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.899"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView13"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="153dp"-->
+<!--            android:layout_marginTop="652dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.841"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/down1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView14"-->
+<!--            android:layout_width="174dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="The Upper face when you see an UPPERCASE 'U' you should move the upper layer in a clockwise rotation or if you-->
+<!--    see UPPERCASE 'U'' move it anti-clockwise rotation."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.075"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView12" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView15"-->
+<!--            android:layout_width="174dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="The Bottom face when you see an UPPERCASE 'D' you should move the bottom layer in a clockwise rotation or if you-->
+<!--    see UPPERCASE 'D'' move it anti-clockwise rotation."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView14"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.885"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView13"-->
+<!--            app:layout_constraintVertical_bias="0.25" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView17"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="153dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.069"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView14"-->
+<!--            app:srcCompat="@drawable/right1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView17"-->
+<!--            android:layout_width="174dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="The Right face when you see an UPPERCASE 'R' you should move the right hand layer in a clockwise rotation or if you-->
+<!--    see UPPERCASE 'R'' move it anti-clockwise rotation."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.057"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView17" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView16"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="-The gray areas on the Rubik’s Cube mean that at the stage you are working on, the color of the gray pieces doesn’t matter."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#2C2C27"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/imageView11"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.509"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.787" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView19"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="153dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/textView17"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.842"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView15"-->
+<!--            app:layout_constraintVertical_bias="0.048"-->
+<!--            app:srcCompat="@drawable/left1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView18"-->
+<!--            android:layout_width="174dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="The Left face when you see an UPPERCASE 'L' you should move the left hand layer in a clockwise rotation or if you-->
+<!--    see UPPERCASE 'L'' move it anti-clockwise rotation."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.885"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView19" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView19"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:text="-The Rubik's Cube has six faces as follows:"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#2C2C27"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/imageView11"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.528"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView16"-->
+<!--            app:layout_constraintVertical_bias="0.217" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView20"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            android:text="If you have just a capital letter, you would turn the face with the same name as that letter clockwise 90 degree. If you have a capital letter with an apostrophe, you would turn the specified face counterclockwise 90 degree. If the capital letter has a 2 beside it, then you turn that face 180 degree."-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#0B0A0A"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.396"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView17" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView21"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="-Note that :"-->
+<!--            android:textColor="#F30808"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/textView20"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.058"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView17"-->
+<!--            app:layout_constraintVertical_bias="1.0" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView12"-->
+<!--            android:layout_width="148dp"-->
+<!--            android:layout_height="153dp"-->
+<!--            android:layout_marginTop="136dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.112"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/textView13"-->
+<!--            app:srcCompat="@drawable/up1" />-->
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+<!--</ScrollView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

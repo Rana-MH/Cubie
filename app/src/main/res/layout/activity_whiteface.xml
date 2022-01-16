@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fillViewport="true"
+    tools:context=".Whiteface">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text=" in order to start solving a 2x2 Rubik’s cube, lets start with solving the first layer. "
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="To the down is a picture of a completed first layer (the grey represents that it doesn’t matter what colour that piece is), now lets learn how to get there."
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/cubesolvedlayer" />
+
+
+        <TextView
+            android:id="@+id/firstMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="To start, find a corner piece with white on it as your starting point (it’s best to start with white because when solving the cube fast, white is the easiest colour to spot so you can find your pieces faster).Now put the white sticker of that piece on the U face. "
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/startingpoint" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Now find another white piece with one of the colours on that piece (other than white) match up with one of the colours on your starting piece. For example, if your starting piece is the White Green Red piece and the other piece you found is the White Green orange piece, then you found the right second piece because they both share the colour green."
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text=" First, rotate the faces around so that your second piece is under your starting piece"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="In my example I’ll use White Green Red as my starting piece and White Green Orange as my second piece. We used white because it doesn’t matter which way the oriented right now)"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/cube2"/>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Next, move the second piece to either the left or right side of the starting piece depending on the colour that matches."
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Since my starting piece has White Green and Red and my second piece has White Green and Orange, Green is the matching colour. Now since green is on the left side of my starting piece, I want to move my second piece to the left. This is demonstrated in the example below:"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/cube3" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Now rotate the whole cube so that the second piece is in front of you instead of the starting piece."
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Now you will have one of these three cases (in my examples I will continue to use White Green Red as the starting piece and White Green Orange as the second piece):"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/case1" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/case2" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/case3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Case 1 is a simple three-move algorithm. R’ D’ R:"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/fullcase1" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Case 2 is almost the same as case 1 except it’s mirrored. F D F’:"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/fullcase2" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Case 3 is my least favourite because it takes two steps. Do these moves R’ D2 R D:"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/fullcase3" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Now you should have a 1x1x2 block like this:"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/case1c" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="Once you have the 1x1x2 block, find another white corner piece and repeat the same process you did for the second one. Then repeat again for the forth and you’ll end up with a successful first layer. This will all be possible unless you come across something like this:"
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/whitefacelast" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text="This is common problem but luckily, it’s very easy to fix. To fix this, just perform either case 1 or case 2 to insert a different piece into the slot with the incorrect piece in it. This will take out the incorrect piece so that you can insert it properly."
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:text=" Congratulations! you have officially solved the first layer of a Rubik’s 2x2 cube. Now there are only two more steps until you’re done. But before you move onto those steps, you should keep scrambling your cube and solving the first layer over and over again. This is necessary so that you will never forget how to solve the first layer. Also, the more time you spend practicing, the faster you’ll be able to solve the cube. "
+            android:textColor="#2C2C27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView43"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/cubesolvedlayer" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#EAE6E6"
+            app:itemIconSize="30dp"
+            app:itemIconTint="#FF000000"
+            app:itemTextColor="#FF000000"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu="@menu/bottom_navigation_menu"
+            app:itemTextAppearanceInactive="@style/bottom_navigation_menu"
+
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

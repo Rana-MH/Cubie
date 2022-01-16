@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pll">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:background="#00F6F1F1"
+        android:onClick="back"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:alpha="0.92"
+        android:text="Last Step:PLL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="As well as orienting, permuting is probably a new word to you. Permuting means to cycle certain pieces while remaining the same orientation. To start, find a pair of last layer corners with adjacent colours matching (if you don’t have any, don’t worry, keep reading). Then pair them up with the first layer pieces of the same colour so you end up with a 1x2x2 block. Here’s an example:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:alpha=".8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/pll" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:text="Once your cube is aligned like in our example, perform the next algorithm with the big square of 4 as the back face (in our example, it’s red). If you don’t have any matching pairs, just perform this next algorithm with any face (except white or yellow) as the back face. Corner permutation algorithm:  R’ U R’ D2 R U’ R’ D2 R2 "
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="CONGRATULATIONS! You have now officially solved the Rubik’s 2x2 cube"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
